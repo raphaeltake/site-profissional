@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header id="topo">
+        <p class="nome">Raphael Takeuchi</p>
+    </header>
+
+    <hr class="linha">
+
+    <main>
+
+        <div class="principal">
+
+            <div class="introducao">
+                <h1 class="introducao_txt">Opa eae!!!</h1>
+                <p class="apresentacao">Meu nome é <span class="decoracao">Raphael</span>, sou estudante na <span class="decoracao">FATEC</span> Antônio Russo, em São Caetano do Sul, SP. Desde criança, tenho interesse em <span class="decoracao">tecnologia</span>, principalmente por causa do meu irmão, que também trabalha com TI. Tenho algum conhecimento em <span class="decoracao">HTML e CSS</span>, e estou estudando algumas linguagens, como <span class="decoracao">Python</span>, além de me aprofundar mais em HTML e CSS para <span class="decoracao">aperfeiçoar o que já sei.</span></p>
+            </div>
+
+            <div class="encaminhamento">
+                <h2 class="finalizacao">Caso queira conversar ou tirar alguma dúvida, me mande um <span class="decoracao">e-mail</span>, é de graça!</h2>
+                <h3 class="curriculo_txt">Você também pode dar uma olhada no meu <span class="decoracao">currículo!</span></h3><span class="pequeno_curriculo">Ainda estou melhorando ele, não ligue para o que estiver vazio.</span>
+            </div>
+
+
+            <nav class="links" id="central_links">
+                <a href="#mandar_email" class="scroll-link">E-mail</a>
+                <a href="#contato" class="scroll-link">Contato</a>
+                <a href="#curriculo" class="scroll-link">Currículo</a>
+                <a href="#portfolio" class="scroll-link">Portfólio</a>
+
+                <div class="indicacao">
+                    <img src="seta1.2.png" alt="" class="seta1">
+
+                    <img src="seta1.2.png" alt="" class="seta2">
+
+                    <span class="clica1">CLICA AQUI</span>
+
+                    <span class="clica2">CLICA AQUI</span>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="imagem_div">
+            <img src="developer-activity-animate2.svg" alt="" class="imagem">
+
+            <img src="profile-pic (3).png" alt="" class="foto">
+        </div>
+
+        <div id="mandar_email">
+
+        </div>
+
+        <hr class="linha2">
+
+        <div class="email" id="div_email">
+            <div class="link_topo">
+                <a href="#topo" class="scroll-link">Voltar</a>
+            </div>
+            <h2>E-mail</h2>
+            <div class="mandar_email">
+                <form action="https://formsubmit.co/raphael.takeuchi@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="email" class="label">E-mail</label>
+                        <input autocomplete="off" type="email" name="email" id="email" required class="input">
+                    </div>
+                    <div class="form-group">
+                        <label for="texto" class="label">Mensagem</label>
+                        <textarea autocomplete="off" type="text" name="name" id="texto" required></textarea>
+                    </div>
+                    <input type="hidden" name="_next" value="https://raphaeltake.github.io/site-profissional/agradecimentos.html">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <hr class="linha3">
+
+        <div class="contato">
+            <div id="contato"></div>
+            <hr class="linha2">
+            <div class="link_topo">
+                <a href="#topo" class="scroll-link">Voltar</a>
+            </div>
+            <h2>Contato</h2>
+            <ul class="lista_contato">
+                <il><img src="e-mail.png" alt=""><span>Raphtakeuchi@gmail.com</span></il>
+                <il><img src="social (1).png" alt=""><a href="https://github.com/raphaeltake" class="link_contato">github</a></il>
+                <il><img src="linkedin (2).png" alt=""><a href="https://www.linkedin.com/in/raphael-takeuchi-10661a306/" class="link_contato">linkedin</a></il>
+                <il><img src="whatsapp (2).png" alt=""><a href="https://wa.me/qr/RLDOXNVQUWSUH1" class="link_contato">whatsapp</a></il>
+                <il><img src="chamada-telefonica.png" alt=""><span>(11)941814629</span></il>
+            </ul>
+            <hr class="linha3">
+        </div>
+
+        <div class="curriculo">
+            <hr class="linha2" id="curriculo">
+            <div class="link_topo">
+                <a href="#topo" class="scroll-link">Voltar</a>
+            </div>
+            <h2>Currículo</h2>
+            <embed src="curriculo.pdf" type="application/pdf">
+            <hr class="linha3">
+        </div>
+
+        <div class="portfolio">
+            <div id="portfolio"></div>
+            <hr class="linha2">
+            <div class="link_topo">
+                <a href="#topo" class="scroll-link">Voltar</a>
+            </div>
+            <h2>Portfólio</h2>
+            <a href="index.html" class="img_portfolio"><img src="site_curriculo.png" alt=""></a>
+            <img src="breve.png" alt="">
+            <img src="breve.png" alt="">
+            <hr class="linha3">
+        </div>
+
+
+    </main>
+
+    <footer>
+        <a href="https://storyset.com/work">Work illustrations by Storyset</a>
+        <a href="https://www.flaticon.com/br/icones-gratis/whatsapp" title="whatsapp ícones">Flaticon</a>
+        <span class="assinatura">ラファエル竹内氏作</span>
+    </footer>
+
+</body>
+
+</html>

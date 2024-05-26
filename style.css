@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Cinzel+Decorative:wght@400;700;900&family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Pompiere&family=Protest+Guerrilla&family=Sedan+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    margin: 1.25rem;
+    height: 1.5rem;
+    font-size: 1.3rem;
+    justify-content: center;
+}
+
+.nome {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 1.5rem;
+}
+
+.linha {
+    border: 0;
+    height: 0.06rem;
+    background-color: aliceblue;
+    margin: 1.25rem 1.25rem 0.3rem 1.25rem;
+    width: 98%;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 0 0 0;
+}
+
+.introducao {
+    font-size: 1.3rem;
+    justify-content: center;
+    margin: 0 0 2rem 0;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+}
+
+.principal {
+    grid-column: 1;
+    margin: 2rem 0 0 7rem;
+}
+
+h1 {
+    margin: 0 0 2rem 0;
+}
+
+.imagem_div {
+    grid-column: 2;
+}
+
+.imagem {
+    height: 39.5rem;
+    float: right;
+    margin-right: 2rem;
+}
+
+.foto {
+    height: 13rem;
+    width: 13rem;
+    position: absolute;
+    right: 26rem;
+    bottom: 27rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.57);
+    border-radius: 50%;
+    border: lightcoral solid;
+}
+
+.encaminhamento {
+    margin: 2rem 0;
+}
+
+.finalizacao {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.3rem;
+    z-index: 2;
+}
+
+.pequeno_curriculo {
+    font-size: 0.9rem;
+    z-index: 2;
+}
+
+.decoracao {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+.links {
+    text-align: center;
+    margin: 3rem;
+}
+
+.links a {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    color: #616161;
+    cursor: pointer;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.links a:focus,
+.links a:hover {
+    color: #ffffff;
+}
+
+.links a:focus:after,
+.links a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.links a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: lightcoral;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.indicacao img {
+    width: 6rem;
+    height: 4rem;
+}
+
+.seta1 {
+    position: relative;
+    left: 26rem;
+    bottom: 3rem;
+    rotate: -5deg;
+}
+
+.clica1 {
+    position: relative;
+    left: 16rem;
+    bottom: 8rem;
+    rotate: 15deg;
+    display: inline-block;
+    color: lightcoral;
+}
+
+.seta2 {
+    position: relative;
+    left: -13.8rem;
+    bottom: 1rem;
+    rotate: -25deg;
+    transform: scaleX(-1);
+}
+
+.clica2 {
+    position: relative;
+    right: 29rem;
+    bottom: 4rem;
+    rotate: -25deg;
+    display: inline-block;
+    color: lightcoral;
+}
+
+footer {
+    position: relative;
+    bottom: -1.2rem;
+}
+
+footer a {
+    color: aliceblue;
+    text-decoration: underline;
+    font-size: 0.8rem;
+    margin: 0 0 0 1rem;
+}
+
+.assinatura {
+    position: absolute;
+    right: 1rem;
+}
+
+.linha2 {
+    border: 0;
+    height: 0.06rem;
+    background-color: aliceblue;
+    margin: 10rem auto 3rem auto;
+    width: 50%;
+    align-content: center;
+    grid-column: span 2;
+}
+
+.linha3 {
+    border: 0;
+    height: 0.06rem;
+    background-color: aliceblue;
+    margin: 3rem auto;
+    width: 50%;
+    align-content: center;
+    grid-column: span 2;
+}
+
+.email {
+    grid-column: span 2;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.mandar_email {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 1rem auto;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input[type="email"]{
+    font-size: 1rem;
+}
+
+input[type="email"],
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    height: 5rem;
+    width: 30rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    resize: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: aliceblue;
+    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: lightcoral;
+}
+
+.contato {
+    grid-column: span 2;
+    margin: 10rem 0;
+    text-align: center;
+}
+
+.contato h2 {
+    margin: 0 0 3rem 0;
+}
+
+.contato span {
+    margin: 0 0 0 1.5rem;
+}
+
+.link_contato {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    color: #616161;
+    cursor: pointer;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.link_contato:focus,
+.link_contato:hover {
+    color: #ffffff;
+}
+
+.link_contato:focus:after,
+.link_contato:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.link_contato:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: lightcoral;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+.lista_contato {
+    list-style-type: none;
+    text-align: center;
+}
+
+.lista_contato li {
+    display: inline-block;
+}
+
+.lista_contato img {
+    vertical-align: middle;
+    margin: 0 0 0 2rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.curriculo {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.curriculo embed {
+    margin: 1rem 0 3.9rem 0;
+    height: 30rem;
+}
+
+.portfolio {
+    grid-column: span 2;
+    text-align: center;
+    margin: 5rem;
+}
+
+.portfolio img {
+    height: 10rem;
+    width: 20rem;
+    border: #616161 solid;
+    transition: 0.2s;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.portfolio img:hover {
+    padding: 0.1rem;
+    border: white solid;
+}
+
+.link_topo{
+    margin: 0 0 1rem 0;
+}
+.link_topo a{
+    color: aliceblue;
+}
+
+.link_topo a:hover{
+    text-decoration: underline;
+}

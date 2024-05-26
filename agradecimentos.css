@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&family=Cinzel+Decorative:wght@400;700;900&family=Julius+Sans+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poetsen+One&family=Pompiere&family=Protest+Guerrilla&family=Sedan+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: black;
+  color: aliceblue;
+  height: 45rem;
+  width: 96rem;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+a {
+  color: aliceblue;
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
